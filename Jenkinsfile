@@ -1,4 +1,4 @@
-@Library('keptn-library@master')
+@Library('keptn-library@refactor/separate-configure-monitoring-from-init')
 def keptn = new sh.keptn.Keptn()
 
 
