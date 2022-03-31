@@ -16,7 +16,11 @@ node() {
 
     stage('Initialize Keptn Project') {
         // Initialize the Keptn Project - ensures the Keptn Project is created with the passed shipyard
-        keptn.keptnInit project:"${project}", service:"${service}", stage:"${firststage}", shipyard: ".keptn/shipyard.yaml"
+        keptn.keptnInit project:"${project}",
+          service:"${service}", stage:"${firststage}",
+          shipyard: ".keptn/shipyard.yaml",
+          keptn_endpoint: "https://rao42797.cloudautomation.dev.dynatracelabs.com/api",
+          keptn_bridge: "https://rao42797.cloudautomation.dev.dynatracelabs.com/bridge"
     }
 
     stage('Add files to Keptn Project') {
