@@ -1,7 +1,3 @@
-@Library('keptn-library@master')
-def keptn = new sh.keptn.Keptn()
-
-
 node() {
 
     def commit_id
