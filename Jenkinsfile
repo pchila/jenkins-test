@@ -4,7 +4,7 @@ node() {
 
     def image_name = "christiankreuzbergerdtx/docker-nodejs-demo"
 
-    def project = "pchila-jenkins-test"
+    def project = "jenkins-plugin-test-and-maven-sadness"
     def service = "hello-service"
     def firststage = "dev"
 
